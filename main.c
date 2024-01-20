@@ -113,6 +113,7 @@ int mkshell_cat(char **args) {
         while (fgets(line, sizeof(line), file) != NULL) {
             printf("%s", line);  // Print each line of the file
         }
+        printf("\n"); // Print a new line at the end of reading the file
         fclose(file);  // Close the file
     }
     return 1;
